@@ -30,7 +30,7 @@ indexmap = { version = "1.7", features = ["rayon"] }
 itertools = "0.10.1"
 libc = "0.2.97"
 log = "0.4.14"
-lru = "0.6.5"
+lru = "0.7.0"
 miow = "0.3.7"
 net2 = "0.2.37"
 num-traits = "0.2"
