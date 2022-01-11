@@ -2510,9 +2510,22 @@ dependencies = [
 
 [[package]]
 name = "mio"
-version = "0.7.13"
+version = "0.7.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8c2bdb6314ec10835cd3293dd268473a835c02b7b352e788be788b3c6ca6bb16"
+checksum = "8067b404fe97c70829f082dec8bcf4f71225d7eaea1d8645349cb76fa06205cc"
+dependencies = [
+ "libc",
+ "log 0.4.14",
+ "miow 0.3.7",
+ "ntapi",
+ "winapi 0.3.8",
+]
+
+[[package]]
+name = "mio"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ba272f85fa0b41fc91872be579b3bbe0f56b792aa361a380eb669469f68dafb2"
 dependencies = [
  "libc",
  "log 0.4.14",
@@ -4230,7 +4243,7 @@ dependencies = [
  "borsh 0.9.0",
  "borsh-derive 0.9.0",
  "futures 0.3.15",
- "mio 0.7.13",
+ "mio 0.8.0",
  "solana-banks-interface",
  "solana-banks-server",
  "solana-program 1.8.0",
@@ -4245,7 +4258,7 @@ dependencies = [
 name = "solana-banks-interface"
 version = "1.8.0"
 dependencies = [
- "mio 0.7.13",
+ "mio 0.8.0",
  "serde",
  "solana-sdk",
  "tarpc",
@@ -4259,7 +4272,7 @@ dependencies = [
  "bincode",
  "futures 0.3.15",
  "log 0.4.14",
- "mio 0.7.13",
+ "mio 0.8.0",
  "solana-banks-interface",
  "solana-metrics",
  "solana-runtime",
@@ -5288,7 +5301,7 @@ dependencies = [
  "chrono",
  "chrono-humanize",
  "log 0.4.14",
- "mio 0.7.13",
+ "mio 0.8.0",
  "serde",
  "serde_derive",
  "solana-banks-client",
@@ -6313,7 +6326,7 @@ dependencies = [
  "bytes 1.0.1",
  "libc",
  "memchr",
- "mio 0.7.13",
+ "mio 0.7.14",
  "num_cpus",
  "once_cell",
  "parking_lot 0.11.0",
