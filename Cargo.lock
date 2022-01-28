@@ -183,7 +183,7 @@ dependencies = [
  "instant",
  "pin-project 1.0.7",
  "rand 0.8.3",
- "tokio 1.6.1",
+ "tokio 1.16.0",
 ]
 
 [[package]]
@@ -1656,7 +1656,7 @@ dependencies = [
  "simpl",
  "smpl_jwt",
  "time 0.2.25",
- "tokio 1.6.1",
+ "tokio 1.16.0",
 ]
 
 [[package]]
@@ -1703,7 +1703,7 @@ dependencies = [
  "http",
  "indexmap",
  "slab",
- "tokio 1.6.1",
+ "tokio 1.16.0",
  "tokio-util 0.6.3",
  "tracing",
  "tracing-futures",
@@ -1941,7 +1941,7 @@ dependencies = [
  "itoa",
  "pin-project-lite 0.2.4",
  "socket2",
- "tokio 1.6.1",
+ "tokio 1.16.0",
  "tower-service",
  "tracing",
  "want",
@@ -1957,7 +1957,7 @@ dependencies = [
  "hyper 0.14.3",
  "log 0.4.14",
  "rustls",
- "tokio 1.6.1",
+ "tokio 1.16.0",
  "tokio-rustls",
  "webpki",
 ]
@@ -1971,7 +1971,7 @@ dependencies = [
  "bytes 1.0.1",
  "hyper 0.14.3",
  "native-tls",
- "tokio 1.6.1",
+ "tokio 1.16.0",
  "tokio-native-tls",
 ]
 
@@ -3612,7 +3612,7 @@ dependencies = [
  "serde",
  "serde_json",
  "serde_urlencoded",
- "tokio 1.6.1",
+ "tokio 1.16.0",
  "tokio-native-tls",
  "tokio-rustls",
  "url 2.2.2",
@@ -4237,7 +4237,7 @@ dependencies = [
  "solana-runtime",
  "solana-sdk",
  "tarpc",
- "tokio 1.6.1",
+ "tokio 1.16.0",
  "tokio-serde",
 ]
 
@@ -4249,7 +4249,7 @@ dependencies = [
  "serde",
  "solana-sdk",
  "tarpc",
- "tokio 1.6.1",
+ "tokio 1.16.0",
 ]
 
 [[package]]
@@ -4265,7 +4265,7 @@ dependencies = [
  "solana-runtime",
  "solana-sdk",
  "tarpc",
- "tokio 1.6.1",
+ "tokio 1.16.0",
  "tokio-serde",
  "tokio-stream",
 ]
@@ -4506,7 +4506,7 @@ dependencies = [
  "solana-version",
  "solana-vote-program",
  "thiserror",
- "tokio 1.6.1",
+ "tokio 1.16.0",
  "tungstenite",
  "url 2.2.2",
 ]
@@ -4701,7 +4701,7 @@ dependencies = [
  "solana-version",
  "spl-memo",
  "thiserror",
- "tokio 1.6.1",
+ "tokio 1.16.0",
 ]
 
 [[package]]
@@ -4937,7 +4937,7 @@ dependencies = [
  "solana-vote-program",
  "tempfile",
  "thiserror",
- "tokio 1.6.1",
+ "tokio 1.16.0",
  "tokio-stream",
  "trees",
 ]
@@ -4975,7 +4975,7 @@ dependencies = [
  "solana-version",
  "solana-vote-program",
  "tempfile",
- "tokio 1.6.1",
+ "tokio 1.16.0",
 ]
 
 [[package]]
@@ -5116,7 +5116,7 @@ dependencies = [
  "solana-logger 1.8.0",
  "solana-sdk",
  "solana-version",
- "tokio 1.6.1",
+ "tokio 1.16.0",
  "url 2.2.2",
 ]
 
@@ -5299,7 +5299,7 @@ dependencies = [
  "solana-sdk",
  "solana-vote-program",
  "thiserror",
- "tokio 1.6.1",
+ "tokio 1.16.0",
 ]
 
 [[package]]
@@ -5372,7 +5372,7 @@ dependencies = [
  "spl-token",
  "symlink",
  "tokio 0.2.22",
- "tokio 1.6.1",
+ "tokio 1.16.0",
  "tokio-util 0.3.1",
 ]
 
@@ -6054,7 +6054,7 @@ dependencies = [
  "static_assertions",
  "tarpc-plugins",
  "thiserror",
- "tokio 1.6.1",
+ "tokio 1.16.0",
  "tokio-serde",
  "tokio-util 0.6.3",
  "tracing",
@@ -6305,11 +6305,10 @@ dependencies = [
 
 [[package]]
 name = "tokio"
-version = "1.6.1"
+version = "1.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0a38d31d7831c6ed7aad00aa4c12d9375fd225a6dd77da1d25b707346319a975"
+checksum = "95e99d373042c30406d317cfc5bfad7b5d604bdd31dab72cf8739abebaa64aee"
 dependencies = [
- "autocfg 1.0.0",
  "bytes 1.0.1",
  "libc",
  "memchr",
@@ -6319,7 +6318,7 @@ dependencies = [
  "parking_lot 0.11.0",
  "pin-project-lite 0.2.4",
  "signal-hook-registry",
- "tokio-macros 1.2.0",
+ "tokio-macros 1.7.0",
  "winapi 0.3.8",
 ]
 
@@ -6389,9 +6388,9 @@ dependencies = [
 
 [[package]]
 name = "tokio-macros"
-version = "1.2.0"
+version = "1.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c49e3df43841dafb86046472506755d8501c5615673955f6aa17181125d13c37"
+checksum = "b557f72f448c511a979e2564e55d74e6c4432fc96ff4f6241bc6bded342643b7"
 dependencies = [
  "proc-macro2 1.0.24",
  "quote 1.0.6",
@@ -6405,7 +6404,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f7d995660bd2b7f8c1568414c1126076c13fbb725c40112dc0120b78eb9b717b"
 dependencies = [
  "native-tls",
- "tokio 1.6.1",
+ "tokio 1.16.0",
 ]
 
 [[package]]
@@ -6434,7 +6433,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bc6844de72e57df1980054b38be3a9f4702aba4858be64dd700181a8a6d0e1b6"
 dependencies = [
  "rustls",
- "tokio 1.6.1",
+ "tokio 1.16.0",
  "webpki",
 ]
 
@@ -6455,13 +6454,13 @@ dependencies = [
 
 [[package]]
 name = "tokio-stream"
-version = "0.1.6"
+version = "0.1.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f8864d706fdb3cc0843a49647ac892720dac98a6eeb818b77190592cf4994066"
+checksum = "50145484efff8818b5ccd256697f36863f587da82cf8b409c53adf1e840798e3"
 dependencies = [
  "futures-core",
  "pin-project-lite 0.2.4",
- "tokio 1.6.1",
+ "tokio 1.16.0",
 ]
 
 [[package]]
@@ -6587,7 +6586,7 @@ dependencies = [
  "log 0.4.14",
  "pin-project-lite 0.2.4",
  "slab",
- "tokio 1.6.1",
+ "tokio 1.16.0",
 ]
 
 [[package]]
@@ -6619,7 +6618,7 @@ dependencies = [
  "pin-project 1.0.7",
  "prost",
  "prost-derive",
- "tokio 1.6.1",
+ "tokio 1.16.0",
  "tokio-rustls",
  "tokio-stream",
  "tokio-util 0.6.3",
@@ -6641,7 +6640,7 @@ dependencies = [
  "pin-project 1.0.7",
  "rand 0.8.3",
  "slab",
- "tokio 1.6.1",
+ "tokio 1.16.0",
  "tokio-stream",
  "tokio-util 0.6.3",
  "tower-layer",
