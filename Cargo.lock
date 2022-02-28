@@ -93,6 +93,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cff77d8686867eceff3105329d4698d96c2391c176d5d03adc90c7389162b5b8"
 
 [[package]]
+name = "arrayvec"
+version = "0.7.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8da52d66c7071e2e3fa2a1e5c6d088fec47b593032b254f5e980de8ea54454d6"
+
+[[package]]
 name = "ascii"
 version = "0.9.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -302,7 +308,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d8fb2d74254a3a0b5cac33ac9f8ed0e44aa50378d9dbb2e5d83bd21ed1dc2c8a"
 dependencies = [
  "arrayref",
- "arrayvec",
+ "arrayvec 0.5.1",
  "constant_time_eq",
 ]
 
@@ -313,12 +319,26 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b64485778c4f16a6a5a9d335e80d449ac6c70cdd6a06d2af18a6f6f775a125b3"
 dependencies = [
  "arrayref",
- "arrayvec",
+ "arrayvec 0.5.1",
  "cc",
  "cfg-if 0.1.10",
  "constant_time_eq",
  "crypto-mac 0.8.0",
  "digest 0.9.0",
+]
+
+[[package]]
+name = "blake3"
+version = "1.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a08e53fc5a564bb15bfe6fae56bd71522205f1f91893f9c0116edad6496c183f"
+dependencies = [
+ "arrayref",
+ "arrayvec 0.7.2",
+ "cc",
+ "cfg-if 1.0.0",
+ "constant_time_eq",
+ "digest 0.10.3",
 ]
 
 [[package]]
@@ -340,6 +360,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4152116fd6e9dadb291ae18fc1ec3575ed6d84c29642d97890f4b4a3417297e4"
 dependencies = [
  "block-padding 0.2.1",
+ "generic-array 0.14.4",
+]
+
+[[package]]
+name = "block-buffer"
+version = "0.10.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0bf7fe51849ea569fd452f37822f606a5cabb684dc918707a0193fd4664ff324"
+dependencies = [
  "generic-array 0.14.4",
 ]
 
@@ -935,6 +964,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7a81dae078cea95a014a339291cec439d2f232ebe854a9d672b796c6afafa9b7"
 
 [[package]]
+name = "crypto-common"
+version = "0.1.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "57952ca27b5e3606ff4dd79b0020231aaf9d6aa76dc05fd30137538c50bd3ce8"
+dependencies = [
+ "generic-array 0.14.4",
+ "typenum",
+]
+
+[[package]]
 name = "crypto-mac"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -951,7 +990,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b584a330336237c1eecd3e94266efb216c56ed91225d634cb2991c5f3fd1aeab"
 dependencies = [
  "generic-array 0.14.4",
- "subtle 2.2.2",
+ "subtle 2.4.1",
 ]
 
 [[package]]
@@ -961,7 +1000,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "58bcd97a54c7ca5ce2f6eb16f6bede5b0ab5f0055fedc17d2f0b4466e21671ca"
 dependencies = [
  "generic-array 0.14.4",
- "subtle 2.2.2",
+ "subtle 2.4.1",
 ]
 
 [[package]]
@@ -971,7 +1010,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "25fab6889090c8133f3deb8f73ba3c65a7f456f66436fc012a1b1e272b1e103e"
 dependencies = [
  "generic-array 0.14.4",
- "subtle 2.2.2",
+ "subtle 2.4.1",
 ]
 
 [[package]]
@@ -1015,7 +1054,7 @@ dependencies = [
  "byteorder",
  "digest 0.8.1",
  "rand_core 0.5.1",
- "subtle 2.2.2",
+ "subtle 2.4.1",
  "zeroize",
 ]
 
@@ -1028,7 +1067,7 @@ dependencies = [
  "byteorder",
  "digest 0.9.0",
  "rand_core 0.5.1",
- "subtle 2.2.2",
+ "subtle 2.4.1",
  "zeroize",
 ]
 
@@ -1108,6 +1147,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d3dd60d1080a57a05ab032377049e0591415d2b31afd7028356dbf3cc6dcb066"
 dependencies = [
  "generic-array 0.14.4",
+]
+
+[[package]]
+name = "digest"
+version = "0.10.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f2fb860ca6fafa5552fb6d0e816a69c8e49f0908bf524e30a90d97c85892d506"
+dependencies = [
+ "block-buffer 0.10.2",
+ "crypto-common",
+ "subtle 2.4.1",
 ]
 
 [[package]]
@@ -2276,7 +2326,7 @@ version = "0.7.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6607c62aa161d23d17a9072cc5da0be67cdfc89d3afb1e8d9c842bebc2525ffe"
 dependencies = [
- "arrayvec",
+ "arrayvec 0.5.1",
  "bitflags",
  "cfg-if 1.0.0",
  "ryu",
@@ -2338,7 +2388,7 @@ checksum = "daaa407ce05dc49849836840fb2542edcadafc4f55e314840cbb5b49359a6919"
 dependencies = [
  "crunchy",
  "digest 0.9.0",
- "subtle 2.2.2",
+ "subtle 2.4.1",
 ]
 
 [[package]]
@@ -4532,7 +4582,7 @@ dependencies = [
  "ahash 0.7.4",
  "base64 0.12.3",
  "bincode",
- "blake3",
+ "blake3 1.3.1",
  "bs58 0.4.0",
  "bv",
  "byteorder",
@@ -5215,7 +5265,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7a2df39c63e21c5b58e2012e7675bed5e8dd5100470ffddedcafb78f5a7e3abe"
 dependencies = [
  "bincode",
- "blake3",
+ "blake3 0.3.8",
  "borsh 0.8.2",
  "borsh-derive 0.8.2",
  "bs58 0.3.1",
@@ -5248,7 +5298,7 @@ version = "1.8.0"
 dependencies = [
  "assert_matches",
  "bincode",
- "blake3",
+ "blake3 0.3.8",
  "borsh 0.9.0",
  "borsh-derive 0.9.0",
  "bs58 0.4.0",
@@ -5383,7 +5433,7 @@ dependencies = [
  "arrayref",
  "assert_matches",
  "bincode",
- "blake3",
+ "blake3 1.3.1",
  "bv",
  "byteorder",
  "bzip2",
@@ -5948,9 +5998,9 @@ checksum = "2d67a5a62ba6e01cb2192ff309324cb4875d0c451d55fe2319433abe7a05a8ee"
 
 [[package]]
 name = "subtle"
-version = "2.2.2"
+version = "2.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7c65d530b10ccaeac294f349038a597e435b18fb456aadd0840a623f83b9e941"
+checksum = "6bdef32e8150c2a081110b42772ffe7d7c9032b606bc226c8260fd97e0976601"
 
 [[package]]
 name = "symlink"
@@ -6780,9 +6830,9 @@ checksum = "1410f6f91f21d1612654e7cc69193b0334f909dcf2c790c4826254fbb86f8887"
 
 [[package]]
 name = "typenum"
-version = "1.12.0"
+version = "1.15.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "373c8a200f9e67a0c95e62a4f52fbf80c23b4381c05a17845531982fa99e6b33"
+checksum = "dcf81ac59edc17cc8697ff311e8f5ef2d99fcbd9817b34cec66f90b6c3dfd987"
 
 [[package]]
 name = "ucd-trie"
