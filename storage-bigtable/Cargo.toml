@@ -10,7 +10,7 @@ documentation = "https://docs.rs/solana-storage-bigtable"
 edition = "2018"
 
 [dependencies]
-arc-swap = "0.4.8"
+arc-swap = "1.2.0"
 backoff = { version = "0.3.0", features = ["tokio"] }
 bincode = "1.3.3"
 bzip2 = "0.4.3"
