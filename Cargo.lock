@@ -3190,7 +3190,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9e6984d2f1a23009bd270b8bb56d0926810a3d483f59c987d77969e9d8e840b2"
 dependencies = [
  "bytes 1.0.1",
- "prost-derive",
+ "prost-derive 0.7.0",
+]
+
+[[package]]
+name = "prost"
+version = "0.10.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a07b0857a71a8cb765763950499cae2413c3f9cede1133478c43600d9e146890"
+dependencies = [
+ "bytes 1.0.1",
+ "prost-derive 0.10.1",
 ]
 
 [[package]]
@@ -3207,13 +3217,26 @@ dependencies = [
 ]
 
 [[package]]
+name = "prost-derive"
+version = "0.10.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7b670f45da57fb8542ebdbb6105a925fe571b67f9e7ed9f47a06a84e72b4e7cc"
+dependencies = [
+ "anyhow",
+ "itertools 0.10.1",
+ "proc-macro2 1.0.24",
+ "quote 1.0.6",
+ "syn 1.0.67",
+]
+
+[[package]]
 name = "prost-types"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b518d7cdd93dab1d1122cf07fa9a60771836c668dde9d9e2a139f957f0d9f1bb"
 dependencies = [
  "bytes 1.0.1",
- "prost",
+ "prost 0.7.0",
 ]
 
 [[package]]
@@ -4909,7 +4932,7 @@ dependencies = [
  "log 0.4.14",
  "matches",
  "num_cpus",
- "prost",
+ "prost 0.10.1",
  "rand 0.7.3",
  "rand_chacha 0.2.2",
  "rayon",
@@ -5569,7 +5592,7 @@ dependencies = [
  "futures 0.3.15",
  "goauth",
  "log 0.4.14",
- "prost",
+ "prost 0.10.1",
  "prost-types",
  "rand_core 0.6.3",
  "serde",
@@ -5589,7 +5612,7 @@ version = "1.8.0"
 dependencies = [
  "bincode",
  "bs58 0.4.0",
- "prost",
+ "prost 0.10.1",
  "serde",
  "serde_derive",
  "solana-account-decoder",
@@ -6617,8 +6640,8 @@ dependencies = [
  "hyper 0.14.3",
  "percent-encoding 2.1.0",
  "pin-project 1.0.7",
- "prost",
- "prost-derive",
+ "prost 0.7.0",
+ "prost-derive 0.7.0",
  "tokio 1.6.1",
  "tokio-rustls",
  "tokio-stream",
