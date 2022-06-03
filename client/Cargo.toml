@@ -31,7 +31,7 @@ lru = "0.7.6"
 quinn = "0.8.3"
 quinn-proto = "0.8.3"
 rand = "0.7.0"
-rand_chacha = "0.2.2"
+rand_chacha = "0.3.1"
 rayon = "1.5.3"
 reqwest = { version = "0.11.10", default-features = false, features = ["blocking", "rustls-tls", "json"] }
 rustls = { version = "0.20.6", features = ["dangerous_configuration"] }
