@@ -598,7 +598,7 @@ checksum = "4acbb09d9ee8e23699b9634375c72795d095bf268439da88562cf9b501f181fa"
 dependencies = [
  "camino",
  "cargo-platform",
- "semver 1.0.9",
+ "semver 1.0.12",
  "serde",
  "serde_json",
 ]
@@ -3762,7 +3762,7 @@ version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bfa0f585226d2e68097d4f95d113b15b83a82e819ab25717ec0590d9584ef366"
 dependencies = [
- "semver 1.0.9",
+ "semver 1.0.12",
 ]
 
 [[package]]
@@ -3966,9 +3966,9 @@ dependencies = [
 
 [[package]]
 name = "semver"
-version = "1.0.9"
+version = "1.0.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8cb243bdfdb5936c8dc3c45762a19d12ab4550cdc753bc247637d4ec35a040fd"
+checksum = "a2333e6df6d6598f2b1974829f853c2b4c5f4a6e503c10af918081aa6f8564e1"
 dependencies = [
  "serde",
 ]
@@ -4597,7 +4597,7 @@ dependencies = [
  "num-traits",
  "pretty-hex",
  "reqwest",
- "semver 1.0.9",
+ "semver 1.0.12",
  "serde",
  "serde_derive",
  "serde_json",
@@ -4653,7 +4653,7 @@ dependencies = [
  "humantime",
  "indicatif",
  "pretty-hex",
- "semver 1.0.9",
+ "semver 1.0.12",
  "serde",
  "serde_json",
  "solana-account-decoder",
@@ -4698,7 +4698,7 @@ dependencies = [
  "rayon",
  "reqwest",
  "rustls 0.20.6",
- "semver 1.0.9",
+ "semver 1.0.12",
  "serde",
  "serde_derive",
  "serde_json",
@@ -5118,7 +5118,7 @@ dependencies = [
  "lazy_static",
  "nix",
  "reqwest",
- "semver 1.0.9",
+ "semver 1.0.12",
  "serde",
  "serde_yaml",
  "solana-clap-utils",
@@ -5611,7 +5611,7 @@ dependencies = [
  "num-traits",
  "parking_lot 0.12.0",
  "qstring",
- "semver 1.0.9",
+ "semver 1.0.12",
  "solana-sdk 1.11.0",
  "thiserror",
  "uriparse",
@@ -6203,7 +6203,7 @@ version = "1.11.0"
 dependencies = [
  "log",
  "rustc_version 0.4.0",
- "semver 1.0.9",
+ "semver 1.0.12",
  "serde",
  "serde_derive",
  "solana-frozen-abi 1.11.0",
