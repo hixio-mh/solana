@@ -1195,7 +1195,7 @@ dependencies = [
  "derivation-path",
  "ed25519-dalek",
  "hmac 0.12.1",
- "sha2 0.10.2",
+ "sha2 0.10.5",
 ]
 
 [[package]]
@@ -4131,9 +4131,9 @@ dependencies = [
 
 [[package]]
 name = "sha2"
-version = "0.10.2"
+version = "0.10.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "55deaec60f81eefe3cce0dc50bda92d6d8e88f2a27df7c5033b42afeb1ed2676"
+checksum = "cf9db03534dff993187064c4e0c05a5708d2a9728ace9a8959b77bedf415dac5"
 dependencies = [
  "cfg-if 1.0.0",
  "cpufeatures",
@@ -4947,7 +4947,7 @@ dependencies = [
  "serde",
  "serde_bytes",
  "serde_derive",
- "sha2 0.10.2",
+ "sha2 0.10.5",
  "solana-frozen-abi-macro 1.10.17",
  "thiserror",
 ]
@@ -4967,7 +4967,7 @@ dependencies = [
  "serde",
  "serde_bytes",
  "serde_derive",
- "sha2 0.10.2",
+ "sha2 0.10.5",
  "solana-frozen-abi-macro 1.11.0",
  "solana-logger 1.11.0",
  "thiserror",
@@ -5181,7 +5181,7 @@ dependencies = [
  "rustc_version 0.4.0",
  "serde",
  "serde_bytes",
- "sha2 0.10.2",
+ "sha2 0.10.5",
  "solana-account-decoder",
  "solana-bpf-loader-program",
  "solana-entry",
@@ -5490,7 +5490,7 @@ dependencies = [
  "serde",
  "serde_bytes",
  "serde_derive",
- "sha2 0.10.2",
+ "sha2 0.10.5",
  "sha3 0.10.1",
  "solana-frozen-abi 1.10.17",
  "solana-frozen-abi-macro 1.10.17",
@@ -5534,7 +5534,7 @@ dependencies = [
  "serde_bytes",
  "serde_derive",
  "serde_json",
- "sha2 0.10.2",
+ "sha2 0.10.5",
  "sha3 0.10.1",
  "solana-frozen-abi 1.11.0",
  "solana-frozen-abi-macro 1.11.0",
@@ -5796,7 +5796,7 @@ dependencies = [
  "serde_bytes",
  "serde_derive",
  "serde_json",
- "sha2 0.10.2",
+ "sha2 0.10.5",
  "sha3 0.10.1",
  "solana-frozen-abi 1.10.17",
  "solana-frozen-abi-macro 1.10.17",
@@ -5847,7 +5847,7 @@ dependencies = [
  "serde_bytes",
  "serde_derive",
  "serde_json",
- "sha2 0.10.2",
+ "sha2 0.10.5",
  "sha3 0.10.1",
  "solana-frozen-abi 1.11.0",
  "solana-frozen-abi-macro 1.11.0",
