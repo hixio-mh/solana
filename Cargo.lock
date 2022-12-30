@@ -4117,6 +4117,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "sha1"
+version = "0.10.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "006769ba83e921b3085caa8334186b00cf92b4cb1a6cf4632fbccc8eff5c7549"
+dependencies = [
+ "cfg-if 1.0.0",
+ "cpufeatures",
+ "digest 0.10.3",
+]
+
+[[package]]
 name = "sha2"
 version = "0.9.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4719,7 +4730,7 @@ dependencies = [
  "tokio",
  "tokio-stream",
  "tokio-tungstenite",
- "tungstenite",
+ "tungstenite 0.18.0",
  "url 2.2.2",
 ]
 
@@ -6885,7 +6896,7 @@ dependencies = [
  "rustls 0.20.6",
  "tokio",
  "tokio-rustls 0.23.3",
- "tungstenite",
+ "tungstenite 0.17.3",
  "webpki 0.22.0",
  "webpki-roots",
 ]
@@ -7151,9 +7162,9 @@ checksum = "59547bce71d9c38b83d9c0e92b6066c4253371f15005def0c30d9657f50c7642"
 
 [[package]]
 name = "tungstenite"
-version = "0.17.2"
+version = "0.17.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d96a2dea40e7570482f28eb57afbe42d97551905da6a9400acc5c328d24004f5"
+checksum = "e27992fd6a8c29ee7eef28fc78349aa244134e10ad447ce3b9f0ac0ed0fa4ce0"
 dependencies = [
  "base64 0.13.0",
  "byteorder",
@@ -7164,6 +7175,27 @@ dependencies = [
  "rand 0.8.5",
  "rustls 0.20.6",
  "sha-1 0.10.0",
+ "thiserror",
+ "url 2.2.2",
+ "utf-8",
+ "webpki 0.22.0",
+]
+
+[[package]]
+name = "tungstenite"
+version = "0.18.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "30ee6ab729cd4cf0fd55218530c4522ed30b7b6081752839b68fcec8d0960788"
+dependencies = [
+ "base64 0.13.0",
+ "byteorder",
+ "bytes",
+ "http",
+ "httparse",
+ "log",
+ "rand 0.8.5",
+ "rustls 0.20.6",
+ "sha1",
  "thiserror",
  "url 2.2.2",
  "utf-8",
