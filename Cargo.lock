@@ -1912,7 +1912,7 @@ checksum = "d87c48c02e0dc5e3b849a2041db3029fd066650f8f717c07bf8ed78ccb895cac"
 dependencies = [
  "http",
  "hyper",
- "rustls 0.20.6",
+ "rustls 0.20.8",
  "tokio",
  "tokio-rustls 0.23.3",
 ]
@@ -3344,7 +3344,7 @@ dependencies = [
  "fxhash",
  "quinn-proto",
  "quinn-udp",
- "rustls 0.20.6",
+ "rustls 0.20.8",
  "thiserror",
  "tokio",
  "tracing",
@@ -3361,7 +3361,7 @@ dependencies = [
  "fxhash",
  "rand 0.8.5",
  "ring",
- "rustls 0.20.6",
+ "rustls 0.20.8",
  "rustls-native-certs",
  "rustls-pemfile 0.2.1",
  "slab",
@@ -3682,7 +3682,7 @@ dependencies = [
  "native-tls",
  "percent-encoding 2.1.0",
  "pin-project-lite",
- "rustls 0.20.6",
+ "rustls 0.20.8",
  "rustls-pemfile 0.3.0",
  "serde",
  "serde_json",
@@ -3794,9 +3794,9 @@ dependencies = [
 
 [[package]]
 name = "rustls"
-version = "0.20.6"
+version = "0.20.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5aab8ee6c7097ed6057f43c187a62418d0c05a4bd5f18b3571db50ee0f9ce033"
+checksum = "fff78fc74d175294f4e83b28343315ffcfb114b156f0185e9741cb5570f50e2f"
 dependencies = [
  "log",
  "ring",
@@ -4697,7 +4697,7 @@ dependencies = [
  "rand_chacha 0.2.2",
  "rayon",
  "reqwest",
- "rustls 0.20.6",
+ "rustls 0.20.8",
  "semver 1.0.9",
  "serde",
  "serde_derive",
@@ -6006,7 +6006,7 @@ dependencies = [
  "quinn",
  "rand 0.7.3",
  "rcgen",
- "rustls 0.20.6",
+ "rustls 0.20.8",
  "solana-logger 1.11.0",
  "solana-metrics",
  "solana-perf",
@@ -6842,7 +6842,7 @@ version = "0.23.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4151fda0cf2798550ad0b34bcfc9b9dcc2a9d2471c895c68f3a8818e54f2389e"
 dependencies = [
- "rustls 0.20.6",
+ "rustls 0.20.8",
  "tokio",
  "webpki 0.22.0",
 ]
@@ -6882,7 +6882,7 @@ checksum = "06cda1232a49558c46f8a504d5b93101d42c0bf7f911f12a105ba48168f821ae"
 dependencies = [
  "futures-util",
  "log",
- "rustls 0.20.6",
+ "rustls 0.20.8",
  "tokio",
  "tokio-rustls 0.23.3",
  "tungstenite",
@@ -7162,7 +7162,7 @@ dependencies = [
  "httparse",
  "log",
  "rand 0.8.5",
- "rustls 0.20.6",
+ "rustls 0.20.8",
  "sha-1 0.10.0",
  "thiserror",
  "url 2.2.2",
