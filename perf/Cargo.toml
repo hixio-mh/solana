@@ -36,7 +36,7 @@ nix = "0.24.0"
 name = "solana_perf"
 
 [dev-dependencies]
-matches = "0.1.9"
+matches = "0.1.10"
 solana-logger = { path = "../logger", version = "=1.11.0" }
 
 [[bench]]

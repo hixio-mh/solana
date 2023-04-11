@@ -19,7 +19,7 @@ indexmap = { version = "1.8", features = ["rayon"] }
 itertools = "0.10.3"
 log = "0.4.17"
 lru = "0.7.6"
-matches = "0.1.9"
+matches = "0.1.10"
 num-traits = "0.2"
 rand = "0.7.0"
 rand_chacha = "0.2.2"
