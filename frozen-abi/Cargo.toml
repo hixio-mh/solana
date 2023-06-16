@@ -22,7 +22,7 @@ solana-frozen-abi-macro = { path = "macro", version = "=1.11.0" }
 thiserror = "1.0"
 
 [target.'cfg(not(target_os = "solana"))'.dependencies]
-generic-array = { version = "0.14.5", default-features = false, features = [
+generic-array = { version = "0.14.7", default-features = false, features = [
 	"serde",
 	"more_lengths"
 ] }
