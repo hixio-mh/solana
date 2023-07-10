@@ -48,7 +48,7 @@ solana-vote-program = { path = "../programs/vote", version = "=1.11.0" }
 thiserror = "1.0"
 
 [dev-dependencies]
-num_cpus = "1.13.1"
+num_cpus = "1.16.0"
 serial_test = "0.6.0"
 
 [build-dependencies]
