@@ -17,7 +17,7 @@ serde_derive = "1.0.103"
 serde_yaml = "0.8.24"
 solana-clap-utils = { path = "../clap-utils", version = "=1.11.0" }
 solana-sdk = { path = "../sdk", version = "=1.11.0" }
-url = "2.2.2"
+url = "2.3.0"
 
 [dev-dependencies]
 anyhow = "1.0.57"

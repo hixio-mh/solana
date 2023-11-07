@@ -34,7 +34,7 @@ solana-sdk = { path = "../sdk", version = "=1.11.0" }
 solana-version = { path = "../version", version = "=1.11.0" }
 tar = "0.4.38"
 tempfile = "3.3.0"
-url = "2.2.2"
+url = "2.3.0"
 
 [target."cfg(windows)".dependencies]
 winapi = "0.3.8"
