@@ -1853,8 +1853,9 @@
   resolved "https://registry.npmjs.org/@types/mocha/-/mocha-9.1.1.tgz"
 
 "@types/mz@^2.7.3":
-  version "2.7.4"
-  resolved "https://registry.npmjs.org/@types/mz/-/mz-2.7.4.tgz"
+  version "2.7.8"
+  resolved "https://registry.yarnpkg.com/@types/mz/-/mz-2.7.8.tgz#5ac05b34f08e6225d7ad9b05e158b03d9ca9e2d4"
+  integrity sha512-mGLNqqwt8yu4pDw9rEphAiyWnEdok0GzOGrwi5EiTuDFxw7H3ZaEI4ASFKq4HaZtemtjQ8MkcmtWcrU4V0WkIw==
   dependencies:
     "@types/node" "*"
 
